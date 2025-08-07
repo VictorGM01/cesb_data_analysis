@@ -92,6 +92,45 @@ Este projeto analisa múltiplas fontes de dados sobre produtividade de soja no B
 - Métricas detalhadas de qualidade de grãos
 - Informações de custos por categoria
 
+### Dump: DumpSafras_2019a2020(MariaDB).sql
+
+**Database:** `cesb`  
+**Período:** 2019-2020 (2 anos)
+
+**Volume de Dados:**
+
+- 28.111 inscrições
+- 23.111 propriedades rurais
+
+**Distribuição Geográfica (Top 5):**
+
+1. Paraná: 8.236 propriedades
+2. Rio Grande do Sul: 8.209 propriedades
+3. Goiás: 2.056 propriedades
+4. Minas Gerais: 1.919 propriedades
+5. São Paulo: 1.611 propriedades
+
+**Evolução Temporal:**
+
+- 2020/2021: 6.766 inscrições
+- 2019/2020: 5.221 inscrições
+- 2018/2019: 3.942 inscrições
+- 2017/2018: 5.571 inscrições
+- 2016/2017: 6.603 inscrições
+
+**Estrutura Principal:**
+
+- **Tabelas Core:** inscricao_desafio, propriedade, safra_desafio, produtividade_obtida, custo_de_producao, agroquimico, desafiosoja_inscricao, produto, safra
+- **Dimensões Geográficas:** property_state, property_city, property_size (em hectares)
+- **Dimensões Técnicas:** tratamento_semente_agroquimico, tratamento_semente_produto, correcao_solo
+
+**Características Únicas:**
+
+- Dados detalhados sobre uso de agroquímicos (42.843 registros)
+- Informações sobre tratamento de sementes e correção de solo
+- Abrange 9 estados principais
+- Base para análise evolutiva do Desafio CESB
+
 ### Dump: Dump_Safras_2009a2015_(SQL_Server).dmp
 **Database:** `CESB_Desafios_2009a2015`
 **Período:** 2009-2015 (7 anos)

@@ -91,6 +91,48 @@ Este projeto analisa múltiplas fontes de dados sobre produtividade de soja no B
 - Dados georreferenciados (latitude/longitude)
 - Métricas detalhadas de qualidade de grãos
 - Informações de custos por categoria
+
+### Dump: Dump_Safras_2009a2015_(SQL_Server).dmp
+**Database:** `CESB_Desafios_2009a2015`
+**Período:** 2009-2015 (7 anos)
+**Volume de Dados:**
+
+- 11.067 inscrições
+- 3.368 proprietários
+
+TODO: comentar número de propriedades
+
+**Distribuição Geográfica (Top 5):**
+
+1. Rio Grande do Sul (RS): 866 proprietários
+2. Paraná (PR): 609 proprietários
+3. Mato Grosso (MT): 297 proprietários
+4. Minas Gerais (MG): 180 proprietários
+5. Goiás (GO): 171 proprietários
+
+**627 proprietários sem estado definido*
+
+**Tamanho médio das propriedades:** 3.028 hectares  
+
+**Evolução Temporal:**
+
+- 2009: 572 inscrições
+- 2010: 160 inscrições
+- 2011: 402 inscrições
+- 2012: 360 inscrições
+- 2013: 346 inscrições
+- 2014: 106 inscrições
+- 2015: 117 inscrições
+- 2016: 105 inscrições
+
+**Estrutura Principal:**
+
+- **Tabelas Core:** produtos, inscricoes, usuarios, mailing, consultores, plantio, proprietarios, colheita e safras
+- **Dimensões Técnicas:** correcao_adubacao, Inf_Adubacoes, Manejo, Tecnologia, TiposFertilizantes e TiposProdutos
+- **Dimensões Geográficas:** municipios, estados e regioes
+
+**Características Únicas:**
+- Informações mais antigas
 - Série temporal mais longa (7 anos)
 
 ## Narrativas Estratégicas Identificadas
